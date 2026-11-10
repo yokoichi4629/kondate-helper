@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "kondate-helper",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-01",
+  // 画面などの静的ファイル(リクエストは無料・無制限)
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+  // 食材の読み取りと献立づくりに使う Workers AI(1日10,000 Neuronsまで無料)
+  "ai": {
+    "binding": "AI"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

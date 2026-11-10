@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>献立ヘルパー</title>
+  <meta name="description" content="買ってきた食材を撮るだけで、何日分になるかと、その日数分の夕食の献立がわかります。">
+  <meta name="theme-color" content="#2f5d3a">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="献立ヘルパー">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main id="app" aria-live="polite"></main>
+  <nav class="tabbar" aria-label="メニュー">
+    <a href="#/" data-tab="home"><span aria-hidden="true">🏠</span>ホーム</a>
+    <a href="#/menu" data-tab="menu"><span aria-hidden="true">🍽</span>献立</a>
+    <a href="#/settings" data-tab="settings"><span aria-hidden="true">⚙️</span>設定</a>
+  </nav>
+  <div id="toast" role="status"></div>
+  <script src="/calc.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
